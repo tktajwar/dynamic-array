@@ -1,6 +1,9 @@
 #ifndef DYNAMIC_ARRAY_H_
 #define DYNAMIC_ARRAY_H_
 
+// the initial size of dynamic array when declared
+#define DYNAMIC_ARRAY_INITIAL_SIZE 4
+
 /*
  * Structure: Dynamic Array
  * ------------------------
@@ -17,5 +20,15 @@ struct dynamic_array
 	int length;
 	int* array;
 };
+
+/*
+ * Structure: create_dynamic_array
+ * -------------------------------
+ *  Creates a new dynamic array
+ *
+ *  returns the newly created dynamic array
+ */
+
+struct dynamic_array create_dynamic_array();
 
 #endif
