@@ -22,7 +22,7 @@ struct dynamic_array
 };
 
 /*
- * Structure: create_dynamic_array
+ * Function: create_dynamic_array
  * -------------------------------
  *  Creates a new dynamic array
  *
