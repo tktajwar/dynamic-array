@@ -31,6 +31,13 @@ struct dynamic_array
 
 struct dynamic_array create_dynamic_array();
 
+/* Function: double_array_size
+ * ---------------------------
+ *  Doubles the size of array
+ *
+ *  struct dynamic_array *dArray: pointer to the array to be doubled
+ */
+
 void double_array_size(struct dynamic_array *dArray);
 
 #endif
