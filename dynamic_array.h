@@ -31,4 +31,6 @@ struct dynamic_array
 
 struct dynamic_array create_dynamic_array();
 
+void double_array_size(struct dynamic_array *dArray);
+
 #endif

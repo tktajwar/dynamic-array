@@ -15,3 +15,22 @@ struct dynamic_array create_dynamic_array()
 
 	return dArray;
 }
+
+void double_array_size(struct dynamic_array *dArray)
+{
+	dArray->size *= 2;
+
+	// create new array with double size
+	int* new_array;
+	new_array = (int *) malloc(sizeof(int) * dArray->size);
+
+	// copy elements from the previous array
+	for (int i=0; i<dArray->length; i++)
+		new_array[i] = dArray->array[i];
+
+	// free previous array
+	free(dArray->array);
+
+	// use the new array
+	dArray->array = new_array;
+}
