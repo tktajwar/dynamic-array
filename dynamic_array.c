@@ -16,6 +16,13 @@ struct dynamic_array create_dynamic_array()
 	return dArray;
 }
 
+void clear_dynamic_array(struct dynamic_array *dArray)
+{
+	dArray->size = INITIAL_SIZE;
+	dArray->length = 0;
+	free(dArray->array);
+}
+
 void double_array_size(struct dynamic_array *dArray)
 {
 	dArray->size *= 2;

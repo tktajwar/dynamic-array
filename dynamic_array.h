@@ -22,6 +22,17 @@ struct dynamic_array
 };
 
 /*
+ * Function: clear_dynamic_array
+ * -----------------------------
+ *  Frees the heap allocated array and sets the size and the length 
+ *  to the initial values
+ *
+ *  struct dynamic_array *dArray: pointer to the array to be cleared
+ */
+
+void clear_dynamic_array(struct dynamic_array *dArray);
+
+/*
  * Function: create_dynamic_array
  * -------------------------------
  *  Creates a new dynamic array
