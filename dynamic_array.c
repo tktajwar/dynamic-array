@@ -51,3 +51,17 @@ void append_to_dynamic_array(struct dynamic_array *dArray, int value)
 	// append to the end
 	dArray->array[dArray->length++] = value;
 }
+
+void insert_to_dynamic_array(struct dynamic_array *dArray, int index, int value)
+{
+	// double arrray size if full
+	if (dArray->length == dArray->size)
+		double_array_size(dArray);
+
+	// move elements right to index to one step right
+	for (int i=dArray->length; i>index; i--)
+		dArray->array[i] = dArray->array[i-1];
+
+	// set the element with given index to given value
+	dArray->array[index] = value;
+}

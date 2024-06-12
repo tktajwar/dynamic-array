@@ -61,4 +61,15 @@ void double_array_size(struct dynamic_array *dArray);
 
 void append_to_dynamic_array(struct dynamic_array *dArray, int value);
 
+/* Function: insert to dynamic array
+ * ---------------------------------
+ *  insert a value at the index of the dynamic array
+ *
+ *  struct dynamic_array *dArray: pointer to the array to get inserted
+ *  int index:                    the index where value gets inserted
+ *  int value:                    the value to be inserted
+ */
+
+void insert_to_dynamic_array(struct dynamic_array *dArray, int index, int value);
+
 #endif
