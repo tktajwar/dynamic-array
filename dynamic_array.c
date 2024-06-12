@@ -41,3 +41,13 @@ void double_array_size(struct dynamic_array *dArray)
 	// use the new array
 	dArray->array = new_array;
 }
+
+void append_to_dynamic_array(struct dynamic_array *dArray, int value)
+{
+	// double arrray size if full
+	if (dArray->length == dArray->size)
+		double_array_size(dArray);
+
+	// append to the end
+	dArray->array[dArray->length++] = value;
+}

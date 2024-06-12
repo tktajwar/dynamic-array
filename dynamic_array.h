@@ -51,4 +51,14 @@ struct dynamic_array create_dynamic_array();
 
 void double_array_size(struct dynamic_array *dArray);
 
+/* Function: append to dynamic array
+ * ---------------------------------
+ *  Append a value at the end of the dynamic array
+ *
+ *  struct dynamic_array *dArray: pointer to the array to be doubled
+ *  int value:                    the value to be appended
+ */
+
+void append_to_dynamic_array(struct dynamic_array *dArray, int value);
+
 #endif
