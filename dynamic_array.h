@@ -55,7 +55,7 @@ void double_array_size(struct dynamic_array *dArray);
  * ---------------------------------
  *  Append a value at the end of the dynamic array
  *
- *  struct dynamic_array *dArray: pointer to the array to get appended
+ *  struct dynamic_array *dArray: pointer to the array to get appended to
  *  int value:                    the value to be appended
  */
 
