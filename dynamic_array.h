@@ -65,7 +65,7 @@ void append_to_dynamic_array(struct dynamic_array *dArray, int value);
  * ---------------------------------
  *  insert a value at the index of the dynamic array
  *
- *  struct dynamic_array *dArray: pointer to the array to get inserted
+ *  struct dynamic_array *dArray: pointer to the array to gets inserted into
  *  int index:                    the index where value gets inserted
  *  int value:                    the value to be inserted
  */
