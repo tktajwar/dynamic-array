@@ -72,4 +72,14 @@ void append_to_dynamic_array(struct dynamic_array *dArray, int value);
 
 void insert_to_dynamic_array(struct dynamic_array *dArray, int index, int value);
 
+/* Function: remove from dynamic array
+ * -----------------------------------
+ *  remove the given index element from the dynamic array
+ *
+ *  struct dynamic_array *dArray: pointer to the array to get removed from
+ *  int index:                    the index of element that gets removed
+ */
+
+int remove_from_dynamic_array(struct dynamic_array *dArray, int index);
+
 #endif

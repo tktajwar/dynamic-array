@@ -65,3 +65,19 @@ void insert_to_dynamic_array(struct dynamic_array *dArray, int index, int value)
 	// set the element with given index to given value
 	dArray->array[index] = value;
 }
+
+int remove_from_dynamic_array(struct dynamic_array *dArray, int index)
+{
+	// exit if index is out of length
+	if (index >= dArray->length)
+		return 1;
+
+	// move elements left to index to one step left
+	for (int i=index; i < dArray->length; i++)
+		dArray->array[i] = dArray->array[i+1];
+
+	// decrement length
+	dArray->length--;
+
+	return 0;
+}
