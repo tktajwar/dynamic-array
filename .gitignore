@@ -1,2 +1,6 @@
 # ignore binary file
 dynamic_array
+
+# ignore object and shared object files
+*.o
+*.so
