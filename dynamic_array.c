@@ -20,6 +20,7 @@ void clear_dynamic_array(struct dynamic_array *dArray)
 	dArray->size = INITIAL_SIZE;
 	dArray->length = 0;
 	free(dArray->array);
+	dArray->array = NULL;
 }
 
 void double_array_size(struct dynamic_array *dArray)
